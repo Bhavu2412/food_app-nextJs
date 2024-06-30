@@ -8,66 +8,68 @@ import { Avatar } from "rsuite";
 export default function Home() {
   return (
     <>
-      <div className="bg-yellow-400 h-[85vh] w-screen font-General">
-        <div className="flex flex-row w-screen h-16 text-black text-2xl font-bold items-center justify-between">
-          <div className="flex justify-between space-x-10 m-6 p-6">
+      <div className="bg-yellow-400 min-h-[85vh] w-screen font-General">
+        <div className="flex flex-col md:flex-row w-full h-16 text-black text-2xl font-bold items-center justify-between px-6 py-4">
+          <div className="flex flex-col md:flex-row md:space-x-10 items-center space-y-4 md:space-y-0">
             <MenuIcon className="cursor-pointer" />
-            <p className="cursor-pointer font-General">Our chef</p>
-            <p className="cursor-pointer font-General">Order a meal</p>
-            <p className="cursor-pointer font-General">How it work</p>
+            <p className="cursor-pointer">Our chef</p>
+            <p className="cursor-pointer">Order a meal</p>
+            <p className="cursor-pointer">How it works</p>
           </div>
-          <div className="flex flex-row items-center justify-center">
-            <p classname="font-General">My cart</p>
+          <div className="flex items-center space-x-4 mt-4 md:mt-0">
+            <p className="cursor-pointer">My cart</p>
             <Avatar circle className="h-8" />
           </div>
         </div>
-        <div className="h-[80vh] custom-bg w-screen flex flex-col space-y-12 items-center justify-center">
-          <div className="bg-yellow-400 font-bold text-2xl text-black w-screen h-[25vh] flex flex-col items-center justify-center">
-            <h1 className="text-6xl font-Title">Home Food Cravings</h1>
-            <p className="font-Other text-4xl">
-              Delicious home cooked food everyday
+        <div className="h-auto custom-bg w-full flex flex-col space-y-12 items-center justify-center py-8">
+          <div className="bg-yellow-400 font-bold text-2xl text-black w-full h-auto flex flex-col items-center justify-center py-8">
+            <h1 className="text-4xl md:text-6xl font-Title text-center">
+              Home Food Cravings
+            </h1>
+            <p className="font-Other text-2xl md:text-4xl text-center">
+              Delicious home-cooked food every day
             </p>
           </div>
-          <Button className="bg-yellow-400 text-black text-xl font-bold">
+          <Button className="bg-yellow-400 text-black text-xl font-bold py-2 px-4">
             Order Now
           </Button>
         </div>
       </div>
 
-      <div className="bg-black h-[85vh] w-screen space-y-10 font-General">
-        <div className="w-screen flex items-center justify-center h-[10vh]">
-          <h1 className=" txt-bold mt-10 font-Title text-yellow-400 text-5xl">
+      <div className="bg-black min-h-[85vh] w-screen space-y-10 font-General">
+        <div className="w-full flex items-center justify-center h-[10vh]">
+          <h1 className="font-bold mt-10 font-Title text-yellow-400 text-4xl md:text-5xl">
             Our chefs
           </h1>
         </div>
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-10 px-5">
           <div className="flex flex-col items-center justify-center m-5 p-5 space-y-5">
             <Image
               width={300}
               alt="NextUI hero Image"
               src="https://www.shutterstock.com/image-photo/african-american-female-chef-having-600nw-2150289105.jpg"
             />
-            <h1 className="text-bold text-3xl font-Other text-yellow-400 ">
+            <h1 className="font-bold text-2xl md:text-3xl font-Other text-yellow-400">
               Chef Saanvi Mishra
             </h1>
-            <p>
+            <p className="text-center text-sm md:text-base">
               Cooking is my passion and creative outlet. I love blending
               traditional recipes with modern flavors to create delightful
               dishes. Join me in my kitchen for a culinary journey filled with
-              love&#44; creativity&#44; and unforgettable meals.
+              love, creativity, and unforgettable meals.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center m-5 p-5 space-y-5 ">
+          <div className="flex flex-col items-center justify-center m-5 p-5 space-y-5">
             <Image
               width={300}
               alt="NextUI hero Image"
               src="https://media.istockphoto.com/id/1454538758/photo/mature-sikh-man-with-turban-in-a-kitchen-stock-photo.jpg?s=612x612&w=0&k=20&c=m61mlu2hv6TMhxkxCZjAda3l6bdIY_BzWl0ZVmfGb7E="
             />
-            <h1 className="text-bold font-Other text-3xl  text-yellow-400  ">
+            <h1 className="font-bold text-2xl md:text-3xl font-Other text-yellow-400">
               Chef Gagan Singh
             </h1>
-            <p>
-              Growing up in Punjab&#44; I have always been surrounded by vibrant
+            <p className="text-center text-sm md:text-base">
+              Growing up in Punjab, I have always been surrounded by vibrant
               flavors and rich culinary traditions. Cooking is my way of sharing
               the essence of Punjabi culture with the world. From hearty curries
               to flavorful tandoori dishes.
@@ -79,10 +81,10 @@ export default function Home() {
               alt="NextUI hero Image"
               src="https://media.istockphoto.com/id/1457876584/photo/portrait-of-a-young-woman-cooking-food-in-the-kitchen-stock-photo.jpg?s=612x612&w=0&k=20&c=JKFlovKfUNGtug_n5GOfCsq3_7IUBNVzhF34egX_mDQ="
             />
-            <h1 className="text-bold font-Other text-3xl  text-yellow-400">
+            <h1 className="font-bold text-2xl md:text-3xl font-Other text-yellow-400">
               Chef Ishani Biswas
             </h1>
-            <p>
+            <p className="text-center text-sm md:text-base">
               Desserts are my passion and my art form. I find immense joy in
               crafting sweet creations that bring smiles and delight to
               everyone. Join me on a sugary journey where every bite is a piece
@@ -91,35 +93,30 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="flex flex-col justify-between items-center w-screen md:flex-row h-[85vh] px-6 py-12 bg-yellow-500">
-        <div className="md:w-1/2 p-4">
-          <Image
-            src="https://c.ndtvimg.com/2023-08/r5mifhb_home-chef_625x300_03_August_23.jpg?im=FeatureCrop&#44;algorithm=cascade&#44;width=620&#44;height=350?im=FaceCrop&#44;algorithm=dnn&#44;width=1200&#44;height=886"
-            alt="Sushi"
-            className="rounded-xl"
-          />
-        </div>
-        <div className=" flex flex-col items-center md:w-1/2 p-4 font-General text-black">
+
+      <section className="flex flex-col md:flex-row justify-between items-center w-screen h-auto md:h-[85vh] px-6 py-12 bg-yellow-500">
+        <div className="flex flex-col items-center md:w-1/2 p-4 font-General text-black">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-Title">
             OUR MISSION
           </h2>
-          <p className="text-xl h-[50vh] text-black w-[70%] md:text-2xl border-4 border-black p-4">
+          <p className="text-xl md:text-2xl text-black w-[90%] md:w-[70%] border-4 border-black p-4">
             To cultivate a thriving community where home cooks can share their
-            culinary passion&#44; fostering connections by offering
-            authentic&#44; home-style meals that satisfy the deepest cravings
-            for comfort and connection.
+            culinary passion, fostering connections by offering authentic,
+            home-style meals that satisfy the deepest cravings for comfort and
+            connection.
           </p>
         </div>
       </section>
-      <div className=" flex flex-row justify-between items-center font-General bg-black-400 p-8 rounded-t-3xl bg-black-400 h-[85vh] w-screen">
-        <div className="flex flex-col items-center w-[45vw] text-center px-6 py-12">
+
+      <div className="flex flex-col md:flex-row justify-between items-center font-General bg-black-400 p-8 rounded-t-3xl w-screen">
+        <div className="flex flex-col items-center md:w-[45%] text-center px-6 py-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 font-Title">
             Cause food requires more than{" "}
             <span className="text-yellow-500 italic font-Title">taste</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 ">
-            At HFC we believe that food should be more than taste it should have
-            that warmth that we find in home cooked meals
+          <p className="text-xl md:text-2xl mb-8">
+            At HFC we believe that food should be more than taste; it should
+            have that warmth that we find in home-cooked meals.
           </p>
           <a
             href="#"
@@ -128,40 +125,40 @@ export default function Home() {
             Order Now
           </a>
         </div>
-        <div className="flex flex-col bg-white text-black m-10 p-10 w-[30vw] rounded-lg">
+        <div className="flex flex-col bg-white text-black m-10 p-10 md:w-[45%] rounded-lg">
           <div>
             <div className="flex items-center mb-2">
               <div className="bg-black text-white font-bold rounded-full h-8 w-8 flex items-center justify-center">
                 1
               </div>
               <h2 className="ml-4 text-xl md:text-2xl font-bold">
-                Fresh&#44; Seasonal Ingredients
+                Fresh, Seasonal Ingredients
               </h2>
             </div>
             <p className="ml-12">
-              Our menu follows the seasons&#44; featuring the best local produce
+              Our menu follows the seasons, featuring the best local produce
               available.
             </p>
           </div>
 
           <div>
             <div className="flex items-center mb-2">
-              <div className="bg-black text-white  font-bold rounded-full h-8 w-8 flex items-center justify-center">
+              <div className="bg-black text-white font-bold rounded-full h-8 w-8 flex items-center justify-center">
                 2
               </div>
               <h2 className="ml-4 text-xl md:text-2xl font-bold">
-                Comfort Food&#44; Elevated
+                Comfort Food, Elevated
               </h2>
             </div>
             <p className="ml-12">
               We have simple crowd-favorites on the menu - but we do them well.
-              Our flavors stand out&#44; guaranteed.
+              Our flavors stand out, guaranteed.
             </p>
           </div>
 
           <div>
             <div className="flex items-center mb-2">
-              <div className="bg-black text-white  font-bold rounded-full h-8 w-8 flex items-center justify-center">
+              <div className="bg-black text-white font-bold rounded-full h-8 w-8 flex items-center justify-center">
                 3
               </div>
               <h2 className="ml-4 text-xl md:text-2xl font-bold">
@@ -169,25 +166,26 @@ export default function Home() {
               </h2>
             </div>
             <p className="ml-12">
-              Enjoy fast&#44; reliable order processing&#44; timely
-              deliveries&#44; efficient customer support&#44; real-time order
-              tracking&#44; and easy payment options.
+              Enjoy fast, reliable order processing, timely deliveries,
+              efficient customer support, real-time order tracking, and easy
+              payment options.
             </p>
           </div>
         </div>
       </div>
-      <div className="bg-yellow-400 h-[85vh] font-General w-screen">
-        <div className="w-screen flex items-center justify-center h-[10vh]">
-          <h1 className="text-4xl txt-bold mt-10 font-Title text-black">
+
+      <div className="bg-yellow-400 min-h-screen font-General">
+        <div className="w-full flex items-center justify-center h-1/10">
+          <h1 className="text-4xl font-bold mt-10 font-Title text-black">
             How it works
           </h1>
         </div>
-        <div className="flex flex-row items-center space-x-10 h-[75vh] justify-center">
-          <div className="bg-white rounded-lg w-[20%] h-[60%] overflow-hidden shadow-lg">
+        <div className="flex flex-wrap justify-center items-center h-9/10 space-y-6 md:space-y-0 md:space-x-10">
+          <div className="bg-white rounded-lg w-full md:w-[20%] lg:w-[25%] h-60 md:h-[60%] overflow-hidden shadow-lg">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2882814.jpg&f=1&nofb=1&ipt=8d133cca6adb6093bb2493592baf1cd857e67adf77658a2a2b72e075087e60cb&ipo=images"
-              alt="Aloo Paratha"
-              className="w-80 h-48 object-cover"
+              alt="Explore"
+              className="w-full h-48 md:h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">Explore</h2>
@@ -196,11 +194,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[20%] h-[60%] overflow-hidden shadow-lg">
+          <div className="bg-white rounded-lg w-full md:w-[20%] lg:w-[25%] h-60 md:h-[60%] overflow-hidden shadow-lg">
             <img
               src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg"
-              alt="Aloo Paratha"
-              className="w-80 h-48 object-cover"
+              alt="Order"
+              className="w-full h-48 md:h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">Order</h2>
@@ -209,11 +207,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[20%] h-[60%] overflow-hidden shadow-lg">
+          <div className="bg-white rounded-lg w-full md:w-[20%] lg:w-[25%] h-60 md:h-[60%] overflow-hidden shadow-lg">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUgA_5V3Jro0%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=2751870145f2a514a01da3e43ffb5d43b2ed6403a2b4c67e149abece4444952c&ipo=images"
-              alt="Aloo Paratha"
-              className="w-80 h-48 object-cover"
+              alt="Deliver"
+              className="w-full h-48 md:h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">Deliver</h2>
@@ -222,11 +220,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[20%] h-[60%] overflow-hidden shadow-lg">
+          <div className="bg-white rounded-lg w-full md:w-[20%] lg:w-[25%] h-60 md:h-[60%] overflow-hidden shadow-lg">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F276%2F276363.jpg&f=1&nofb=1&ipt=72eb6892b87c83674d55eab7d540a43e60e6ec716f0ecb6c4c4f9c78668254bc&ipo=images"
-              alt="Aloo Paratha"
-              className="w-80 h-48 object-cover"
+              alt="Enjoy"
+              className="w-full h-48 md:h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">Enjoy</h2>
@@ -253,7 +251,7 @@ export default function Home() {
             <img
               src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg"
               alt="Aloo Paratha"
-              className="w-80 h-48 object-cover"
+              className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">
@@ -268,7 +266,7 @@ export default function Home() {
             <img
               src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg"
               alt="Samosa W/ Chutney"
-              className="w-96 h-48 object-cover"
+              className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">
@@ -283,7 +281,7 @@ export default function Home() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4IBMLJRAfP3nw3_r1uVRhpxSsaAiTERcag&s"
               alt="Oreo Freakshake"
-              className="h-48 w-96 object-cover"
+              className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-2xl text-black font-bold mb-2">
@@ -297,7 +295,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-gray-900 h-[85vh] font-General w-screen">
-        <footer className="bg-gray-900 h-[85vh] text-white py-10">
+        <footer className="bg-gray-900 text-white py-10">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
               <div>
@@ -404,12 +402,18 @@ export default function Home() {
                 </h2>
                 <ul>
                   <li>
-                    <a href="tel:+919136355099" className="flex items-center">
+                    <a
+                      href="tel:+919136355099"
+                      className="flex items-center hover:underline"
+                    >
                       <span className="mr-2">📞</span>+91 9136355099
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+919372585749" className="flex items-center">
+                    <a
+                      href="tel:+919372585749"
+                      className="flex items-center hover:underline"
+                    >
                       <span className="mr-2">📞</span>+91 93725 85749
                     </a>
                   </li>
@@ -482,92 +486,74 @@ export default function Home() {
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Andheri West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Bandra East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Bandra West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food BKC
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Borivali East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Borivali West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Kandivali
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Chembur
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Dadar East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Dadar West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Dahisar East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Dahisar West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Ghatkopar East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Ghatkopar West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Goregaon East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Goregaon West
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Jogeshwari East
                   </a>{" "}
                   |
                   <a href="#" className="hover:underline">
-                    {" "}
                     Homemade food Jogeshwari West
                   </a>
                 </p>
