@@ -1,5 +1,6 @@
 "use client";
 import { Image } from "@nextui-org/image";
+
 import "./globals.css";
 import { Button } from "@nextui-org/react";
 import MenuIcon from "@rsuite/icons/Menu";
@@ -13,7 +14,7 @@ export default function Home() {
             <MenuIcon className="cursor-pointer" />
             <p className="cursor-pointer font-General">Our chef</p>
             <p className="cursor-pointer font-General">Order a meal</p>
-            <p className="cursor-pointer font-General">How it's work</p>
+            <p className="cursor-pointer font-General">How it work</p>
           </div>
           <div className="flex flex-row items-center justify-center">
             <p classname="font-General">My cart</p>
@@ -23,7 +24,9 @@ export default function Home() {
         <div className="h-[80vh] custom-bg w-screen flex flex-col space-y-12 items-center justify-center">
           <div className="bg-yellow-400 font-bold text-2xl text-black w-screen h-[25vh] flex flex-col items-center justify-center">
             <h1 className="text-6xl font-Title">Home Food Cravings</h1>
-            <p className="font-Other text-4xl">Delicious home cooked food everyday</p>
+            <p className="font-Other text-4xl">
+              Delicious home cooked food everyday
+            </p>
           </div>
           <Button className="bg-yellow-400 text-black text-xl font-bold">
             Order Now
@@ -33,7 +36,9 @@ export default function Home() {
 
       <div className="bg-black h-[85vh] w-screen space-y-10 font-General">
         <div className="w-screen flex items-center justify-center h-[10vh]">
-          <h1 className=" txt-bold mt-10 font-Title text-yellow-400 text-5xl">Our chefs</h1>
+          <h1 className=" txt-bold mt-10 font-Title text-yellow-400 text-5xl">
+            Our chefs
+          </h1>
         </div>
         <div className="flex flex-row items-center justify-center">
           <div className="flex flex-col items-center justify-center m-5 p-5 space-y-5">
@@ -42,14 +47,14 @@ export default function Home() {
               alt="NextUI hero Image"
               src="https://www.shutterstock.com/image-photo/african-american-female-chef-having-600nw-2150289105.jpg"
             />
-            <h1 className="text-bold text-3xl font-Other text-yellow-400 text-lg">
+            <h1 className="text-bold text-3xl font-Other text-yellow-400 ">
               Chef Saanvi Mishra
             </h1>
             <p>
               Cooking is my passion and creative outlet. I love blending
               traditional recipes with modern flavors to create delightful
               dishes. Join me in my kitchen for a culinary journey filled with
-              love, creativity, and unforgettable meals.
+              love&#44; creativity&#44; and unforgettable meals.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center m-5 p-5 space-y-5 ">
@@ -58,11 +63,11 @@ export default function Home() {
               alt="NextUI hero Image"
               src="https://media.istockphoto.com/id/1454538758/photo/mature-sikh-man-with-turban-in-a-kitchen-stock-photo.jpg?s=612x612&w=0&k=20&c=m61mlu2hv6TMhxkxCZjAda3l6bdIY_BzWl0ZVmfGb7E="
             />
-            <h1 className="text-bold font-Other text-3xl  text-yellow-400 text-lg ">
+            <h1 className="text-bold font-Other text-3xl  text-yellow-400  ">
               Chef Gagan Singh
             </h1>
             <p>
-              Growing up in Punjab, I've always been surrounded by vibrant
+              Growing up in Punjab&#44; I have always been surrounded by vibrant
               flavors and rich culinary traditions. Cooking is my way of sharing
               the essence of Punjabi culture with the world. From hearty curries
               to flavorful tandoori dishes.
@@ -74,7 +79,7 @@ export default function Home() {
               alt="NextUI hero Image"
               src="https://media.istockphoto.com/id/1457876584/photo/portrait-of-a-young-woman-cooking-food-in-the-kitchen-stock-photo.jpg?s=612x612&w=0&k=20&c=JKFlovKfUNGtug_n5GOfCsq3_7IUBNVzhF34egX_mDQ="
             />
-            <h1 className="text-bold font-Other text-3xl  text-yellow-400 text-lg">
+            <h1 className="text-bold font-Other text-3xl  text-yellow-400">
               Chef Ishani Biswas
             </h1>
             <p>
@@ -89,18 +94,20 @@ export default function Home() {
       <section className="flex flex-col justify-between items-center w-screen md:flex-row h-[85vh] px-6 py-12 bg-yellow-500">
         <div className="md:w-1/2 p-4">
           <Image
-            src="https://c.ndtvimg.com/2023-08/r5mifhb_home-chef_625x300_03_August_23.jpg?im=FeatureCrop,algorithm=cascade,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+            src="https://c.ndtvimg.com/2023-08/r5mifhb_home-chef_625x300_03_August_23.jpg?im=FeatureCrop&#44;algorithm=cascade&#44;width=620&#44;height=350?im=FaceCrop&#44;algorithm=dnn&#44;width=1200&#44;height=886"
             alt="Sushi"
             className="rounded-xl"
           />
         </div>
         <div className=" flex flex-col items-center md:w-1/2 p-4 font-General text-black">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-Title">OUR MISSION</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-Title">
+            OUR MISSION
+          </h2>
           <p className="text-xl h-[50vh] text-black w-[70%] md:text-2xl border-4 border-black p-4">
             To cultivate a thriving community where home cooks can share their
-            culinary passion, fostering connections by offering authentic,
-            home-style meals that satisfy the deepest cravings for comfort and
-            connection.
+            culinary passion&#44; fostering connections by offering
+            authentic&#44; home-style meals that satisfy the deepest cravings
+            for comfort and connection.
           </p>
         </div>
       </section>
@@ -128,11 +135,11 @@ export default function Home() {
                 1
               </div>
               <h2 className="ml-4 text-xl md:text-2xl font-bold">
-                Fresh, Seasonal Ingredients
+                Fresh&#44; Seasonal Ingredients
               </h2>
             </div>
             <p className="ml-12">
-              Our menu follows the seasons, featuring the best local produce
+              Our menu follows the seasons&#44; featuring the best local produce
               available.
             </p>
           </div>
@@ -143,12 +150,12 @@ export default function Home() {
                 2
               </div>
               <h2 className="ml-4 text-xl md:text-2xl font-bold">
-                Comfort Food, Elevated
+                Comfort Food&#44; Elevated
               </h2>
             </div>
             <p className="ml-12">
               We have simple crowd-favorites on the menu - but we do them well.
-              Our flavors stand out, guaranteed.
+              Our flavors stand out&#44; guaranteed.
             </p>
           </div>
 
@@ -162,16 +169,18 @@ export default function Home() {
               </h2>
             </div>
             <p className="ml-12">
-              Enjoy fast, reliable order processing, timely deliveries,
-              efficient customer support, real-time order tracking, and easy
-              payment options.
+              Enjoy fast&#44; reliable order processing&#44; timely
+              deliveries&#44; efficient customer support&#44; real-time order
+              tracking&#44; and easy payment options.
             </p>
           </div>
         </div>
       </div>
       <div className="bg-yellow-400 h-[85vh] font-General w-screen">
         <div className="w-screen flex items-center justify-center h-[10vh]">
-          <h1 className="text-4xl txt-bold mt-10 font-Title text-black">How it work's</h1>
+          <h1 className="text-4xl txt-bold mt-10 font-Title text-black">
+            How it works
+          </h1>
         </div>
         <div className="flex flex-row items-center space-x-10 h-[75vh] justify-center">
           <div className="bg-white rounded-lg w-[20%] h-[60%] overflow-hidden shadow-lg">
@@ -308,7 +317,9 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="font-bold mb-4 font-Title text-xl">For Customer</h2>
+                <h2 className="font-bold mb-4 font-Title text-xl">
+                  For Customer
+                </h2>
                 <ul>
                   <li>
                     <a href="#" className="hover:underline font-bold">
@@ -370,7 +381,9 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="font-bold mb-4 font-Title text-xl">For HomeChefs</h2>
+                <h2 className="font-bold mb-4 font-Title text-xl">
+                  For HomeChefs
+                </h2>
                 <ul>
                   <li>
                     <a href="#" className="hover:underline">
@@ -386,7 +399,9 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="font-bold mb-4 font-Title text-xl">Reach Us At</h2>
+                <h2 className="font-bold mb-4 font-Title text-xl">
+                  Reach Us At
+                </h2>
                 <ul>
                   <li>
                     <a href="tel:+919136355099" className="flex items-center">
@@ -402,35 +417,35 @@ export default function Home() {
                 <div className="flex space-x-4 mt-4">
                   <a href="#" aria-label="Email">
                     <img
-                      src="/path/to/email-icon.png"
+                      src="./path/to/email-icon.png"
                       alt="Email"
                       className="w-6 h-6"
                     />
                   </a>
                   <a href="#" aria-label="Facebook">
                     <img
-                      src="/path/to/facebook-icon.png"
+                      src="./path/to/facebook-icon.png"
                       alt="Facebook"
                       className="w-6 h-6"
                     />
                   </a>
                   <a href="#" aria-label="Instagram">
                     <img
-                      src="/path/to/instagram-icon.png"
+                      src="./path/to/instagram-icon.png"
                       alt="Instagram"
                       className="w-6 h-6"
                     />
                   </a>
                   <a href="#" aria-label="LinkedIn">
                     <img
-                      src="/path/to/linkedin-icon.png"
+                      src="./path/to/linkedin-icon.png"
                       alt="LinkedIn"
                       className="w-6 h-6"
                     />
                   </a>
                   <a href="#" aria-label="Twitter">
                     <img
-                      src="/path/to/twitter-icon.png"
+                      src="./path/to/twitter-icon.png"
                       alt="Twitter"
                       className="w-6 h-6"
                     />
@@ -458,7 +473,9 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="font-bold mb-4 font-Title text-xl">Serviceable Location</h2>
+                <h2 className="font-bold mb-4 font-Title text-xl">
+                  Serviceable Location
+                </h2>
                 <p>
                   <a href="#" className="hover:underline">
                     Homemade food Andheri East
